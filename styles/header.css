@@ -1,0 +1,43 @@
+header {
+  background-color: rgb(26, 30, 31);
+  color: rgb(244, 244, 244);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.95)
+  
+}
+
+.header-left-section {
+  width: 182px;
+  height: 40px;
+  margin: 22px 20px;
+}
+
+.header-right-section {
+  width: 454px;
+  height: 26px;
+  margin: 22px 10px;
+}
+
+.nav-pages {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.active,
+a:hover {
+  color: rgb(0, 163, 224);
+}
