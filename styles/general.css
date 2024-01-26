@@ -6,3 +6,12 @@ body {
   padding: 0;
   padding-top: 84px;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

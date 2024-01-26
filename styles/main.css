@@ -43,11 +43,11 @@ h1 {
 
 .more-info-link {
   margin-left: 10px;
+  transition: 300ms;
 }
 
 .more-info-link:hover {
   opacity: 0.8;
-  transition: all 0.3s;
 }
 
 .grid-container {
@@ -56,3 +56,33 @@ h1 {
   row-gap: 20px;
   column-gap: 40px;
 }
+
+.qa-heading,
+.question-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer-block {
+  display: none;
+}
+
+.slide {
+  width: 100%;
+}
+
+.slide-container {
+  /* width: 100%; */
+  min-height: 600px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content {
+width: 400%;
+height: 500px;
+display: flex;
+}
+
