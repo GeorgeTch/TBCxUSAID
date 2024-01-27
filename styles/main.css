@@ -114,19 +114,75 @@ h4 {
 .slide-container {
   min-height: 35rem;
   background-color: rgb(43, 43, 43);
+  position: relative;
 }
 
 .slide-content {
-  height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .slide {
-  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 980px;
+  opacity: 100;
+  transition: all 2s;
+}
+
+.slide-navigation-component {
+  display: flex;
+  gap: 4px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide-hide {
+  /* display: none; */
+  opacity: 0;
+}
+
+.slide.third-slide {
+  justify-content: center;
+}
+
+.slide-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 9;
+}
+
+.slide-arrows button {
+  width: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 100px;
+}
+
+.slide-arrows button svg {
+  fill: white;
+  stroke: white;
+  stroke-width: 1px;
+}
+
+.arrow-right {
+  transform: rotate(180deg);
+  right: 0;
+  position: absolute;
+}
+
+.faq-section {
+  padding: 2rem;
 }
 
 .faq-heading {

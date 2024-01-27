@@ -418,36 +418,50 @@
       </div>
     </section>
 
-
     <div class="slide-container">
+      <div class="slide-arrows">
+        <button class="arrow-left">
+          <svg onclick="sliderArrowsHandler(event)" id="arr-left" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 21 41">
+            <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+          </svg>
+        </button>
+        <button class="arrow-right">
+          <svg onclick="sliderArrowsHandler(event)" id="arr-right" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 21 41">
+            <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+          </svg>
+        </button>
+      </div>
       <div class="slide-content wrapper">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <div class="slide first-slide">
+        <div class="slide-navigation-component">
+          <input onclick="sliderNavigationHandler(event)" type="radio" name="radio-btn" id="radio-0" checked="true">
+          <input onclick="sliderNavigationHandler(event)" type="radio" name="radio-btn" id="radio-1">
+          <input onclick="sliderNavigationHandler(event)" type="radio" name="radio-btn" id="radio-2">
+        </div>
+        <div id="slide-0" class="slide first-slide">
           <img src="images/slider/usaid-img.webp">
           <img src="images/slider/space-int-img.webp">
           <img src="images/slider/tnet-img.webp">
         </div>
 
-        <div class="slide second-slide">
+        <div id="slide-1" class="slide second-slide slide-hide">
           <img src="images/slider/tegeta-img.webp">
           <img src="images/slider/spectre-img.webp">
           <img src="images/slider/tbc-leasing-img.webp">
         </div>
 
-        <div class="slide third-slide">
+        <div id="slide-2" class="slide third-slide slide-hide">
           <img src="images/slider/ufc-img.webp">
         </div>
 
         <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
+          <label for="radio-0" class="manual-btn"></label>
+          <label for="radio-1" class="manual-btn"></label>
+          <label for="radio-2" class="manual-btn"></label>
         </div>
       </div>
     </div>
-
 
     <section class="faq-section wrapper">
       <div class="faq-heading">
@@ -477,7 +491,8 @@
             <ul>
               <li>
                 <p>
-                  <span class="bold-span">I ეტაპი -</span> პირველ ეტაპზე საჭიროა, შეავსო სასურველი კურსისთვის განკუთვნილი სარეგისტრაციო ფორმა, რომელიც
+                  <span class="bold-span">I ეტაპი -</span> პირველ ეტაპზე საჭიროა, შეავსო სასურველი კურსისთვის
+                  განკუთვნილი სარეგისტრაციო ფორმა, რომელიც
                   განთავსებულია კურსის შიდა გვერდზე. კურსზე რეგისტრაციის დასრულების შემდეგ დაიწყება შემოსული
                   განცხადებების
                   გადარჩევა.
@@ -485,7 +500,8 @@
               </li>
               <li>
                 <p>
-                  <span class="bold-span">II ეტაპი -</span> შერჩევის მეორე ეტაპი კურსების მიხედვით განსხვავებულია, ზოგიერთი კურსისთვის მოიცავს
+                  <span class="bold-span">II ეტაპი -</span> შერჩევის მეორე ეტაპი კურსების მიხედვით განსხვავებულია,
+                  ზოგიერთი კურსისთვის მოიცავს
                   პრე-ტესტს,
                   ზოგიერთ კურსზე კი უნარების ტესტს, სადაც მინიმალური ზღვარის გადალახვის შემთხვევაში გადახვალ შერჩევის
                   შემდეგ
@@ -494,7 +510,8 @@
               </li>
               <li>
                 <p>
-                  <span class="bold-span">III ეტაპი -</span> მესამე ეტაპი კურსების მიხედვით განსხვავდება: Advance კურსებზე, სადაც მოითხოვება გარკვეული
+                  <span class="bold-span">III ეტაპი -</span> მესამე ეტაპი კურსების მიხედვით განსხვავდება: Advance
+                  კურსებზე, სადაც მოითხოვება გარკვეული
                   ტექნიკური ცოდნა, მონაწილეებმა უნდა დაწერონ ტექნიკური ტესტი ცოდნის დონის შესამოწმებლად, ხოლო კურსებზე,
                   სადაც
                   რაიმე ტიპის წინასწარი ცოდნა მოთხოვნილი არ არის უნდა შეასრულოთ ტექნიკური დავალება, რაც თქვენი კვლევისა
@@ -548,16 +565,8 @@
 
   <footer>
     <div class="wrapper footer-grid">
-      <img src="images/tbc-logo.webp" alt="tbc logo">
-      <p>
-        <a href="https://fsymbols.com/copyright/" target="_blank">© 2023</a>
-        ყველა უფლება დაცულია
-      </p>
-      <p>
-        წესები და პირობები
-      </p>
-
-      <div>
+      <img class="tbc-logo" src="images/tbc-logo.webp" alt="tbc logo">
+      <div class="other-logos">
         <a href="https://www.facebook.com/tbcbank/" target="_blank">
           <img src="images/fb-logo.webp" alt="facebook logo">
         </a>
@@ -565,10 +574,32 @@
           <img src="images/youtube-logo.webp" alt="youtube logo">
         </a>
       </div>
-      <a href="mailto:itacademy@tbcbank.com.ge" target="_self">
-        <button class="mail-to-button">მოგვწერეთ</button></a>
+      <p class="copyright-text">
+        <a href="https://fsymbols.com/copyright/" target="_blank">© 2023</a>
+        ყველა უფლება დაცულია
+      </p>
+      <p class="terms-text">
+        <span class="terms-and-conditions">
+          წესები და პირობები
+        </span>
+      </p>
 
+      <p class="mail-to-text">
+        <a href="mailto:itacademy@tbcbank.com.ge" target="_self">
+          <button class="mail-to-button">
+            მოგვწერეთ
+          </button>
+        </a>
+      </p>
   </footer>
+
+  <div class="terms-and-conditions-wrapper">
+    <div class="terms-and-conditions-content">
+
+    </div>
+  </div>
+
+  <script src="slider.js"></script>
 </body>
 
 </html>
