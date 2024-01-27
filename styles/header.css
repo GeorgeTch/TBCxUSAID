@@ -1,31 +1,37 @@
 header {
   background-color: rgb(26, 30, 31);
   color: rgb(244, 244, 244);
-  display: flex;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  background-color: rgba(34, 34, 34, 0.95)
-  
+  height: 10vh;
+  background-color: rgba(34, 34, 34, 0.95);
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-left-section {
-  width: 182px;
-  height: 40px;
-  margin: 22px 20px;
+  width: 18rem;
+  /* height: 4rem; */
+  /* margin-right: auto; */
 }
 
 .header-right-section {
-  width: 454px;
-  height: 26px;
-  margin: 22px 10px;
+  width: 45rem;
+  /* margin-left: auto; */
 }
 
 .nav-pages {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header .active,
