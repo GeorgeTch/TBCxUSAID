@@ -49,14 +49,91 @@ footer {
 
 .mail-to-button:hover {
   background-color: rgb(219, 214, 214);
-  color: rgb(78, 76, 76); 
+  color: rgb(78, 76, 76);
 }
 
 .terms-and-conditions {
   cursor: pointer;
   display: inline-block;
 }
+
 .terms-and-conditions:hover {
   opacity: 0.7;
 }
 
+.terms-and-conditions-sidebar {
+  width: 68rem;
+  background-color: rgb(43, 43, 43);
+  color: rgb(140, 140, 140);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: all 400ms;
+}
+
+.displayed-sidebar {
+  transform: translateX(0);
+}
+
+.terms-and-conditions-sidebar::-webkit-scrollbar {
+  width: 0;
+}
+
+.terms-and-conditions-content {
+  width: 56rem;
+  margin-inline: auto;
+  padding-block: 6rem 2rem;
+}
+
+.terms-and-conditions-content p {
+  font-size: 1.4rem;
+  margin-block: 1rem;
+}
+
+.terms-and-conditions-content a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.terms-and-conditions-content>.first-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.secondary-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+
+.close-btn {
+  margin-block: 5rem 1rem;
+  width: 100%;
+  font-size: 1.4rem;
+  color: rgb(28, 28, 28);
+  background-color: rgb(219, 219, 219);
+  font-weight: bold;
+  border-radius: .5rem;
+  border: none;
+  padding: 2rem;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.close-btn:hover {
+  background-color: rgb(0, 174, 243);
+  color: rgb(243, 239, 239);
+}
+
+.close-icon {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  cursor: pointer;
+}
