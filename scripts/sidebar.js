@@ -1,18 +1,32 @@
-const closeIcon = document.querySelector('.close-icon');
-const closeBtn = document.querySelector('.close-btn');
-const sidebar = document.querySelector('.terms-and-conditions-sidebar');
+//terms and conditions sidebar
+const termsCloseIcon = document.querySelector('.close-icon');
+const termsCloseBtn = document.querySelector('.close-btn');
+const termsSidebar = document.querySelector('.terms-and-conditions-sidebar');
 const termsBtn = document.querySelector('.terms-and-conditions');
 const sidebarOuterSpace = document.querySelector('.sidebar-outer-container')
 
 
-function openSidebar() { 
-  sidebar.classList.add('displayed-sidebar');
+function openTermsSidebar() { 
+  termsSidebar.classList.add('displayed-terms-sidebar');
   sidebarOuterSpace.classList.add('sidebar-outside-bg');
 }
 
-function closeSidebar() {
-  sidebar.classList.remove('displayed-sidebar');
+function closeTermsSidebar() {
+  termsSidebar.classList.remove('displayed-terms-sidebar');
   sidebarOuterSpace.classList.remove('sidebar-outside-bg');
 }
 
+// navigation sidebar
 
+const menuBtn = document.querySelector('.burger-menu');
+const navSidebar = document.querySelector('.nav-sidebar');
+
+function openNavSidebar() {
+  navSidebar.style.display = 'flex';
+  sidebarOuterSpace.classList.add('sidebar-outside-bg');
+}
+
+function closeNavSidebar() {
+  navSidebar.style.display = 'none';
+  sidebarOuterSpace.classList.remove('sidebar-outside-bg');
+}

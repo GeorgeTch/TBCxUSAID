@@ -89,9 +89,36 @@
             <li><a class="active" href="">TBCxUSAID</a></li>
             <li><a href="https://www.tbcacademy.ge/risks-academy">რისკები</a></li>
           </ul>
+
+          <ul class="nav-sidebar">
+            <div class="close-icon" onclick="closeNavSidebar()">
+              <svg preserveAspectRatio="xMidYMid meet" data-bbox="82.189 55.096 481.811 481.808"
+                xmlns="http://www.w3.org/2000/svg" viewBox="82.189 55.096 481.811 481.808" role="presentation"
+                aria-hidden="true">
+                <g>
+                  <path fill="rgb(128, 128, 128)"
+                    d="M531.936 536.904L323.094 328.063 114.253 536.904l-32.064-32.062L291.032 296 82.189 87.157l32.064-32.061 208.842 208.842L531.936 55.096 564 87.157 355.155 296 564 504.842l-32.064 32.062z">
+                  </path>
+                </g>
+              </svg>
+            </div>
+
+            <li><a href="https://www.tbcacademy.ge/">მთავარი</a></li>
+            <li><a href="https://www.tbcacademy.ge/it-academy">TBC IT</a></li>
+            <li><a class="active" href="">TBCxUSAID</a></li>
+            <li><a href="https://www.tbcacademy.ge/risks-academy">რისკები</a></li>
+          </ul>
+
+          <div class="burger-menu" onclick="openNavSidebar()">
+            <div class="first-bar"></div>
+            <div class="second-bar"></div>
+            <div class="third-bar"></div>
+          </div>
         </nav>
       </div>
+
     </div>
+
   </header>
 
   <main>
@@ -579,7 +606,7 @@
         ყველა უფლება დაცულია
       </p>
       <p class="terms-text">
-        <span class="terms-and-conditions" onclick="openSidebar()">
+        <span class="terms-and-conditions" onclick="openTermsSidebar()">
           წესები და პირობები
         </span>
       </p>
@@ -597,7 +624,7 @@
 
   <div class="terms-and-conditions-sidebar">
     <div class="terms-and-conditions-content">
-      <div class="close-icon" onclick="closeSidebar()">
+      <div class="close-icon" onclick="closeTermsSidebar()">
         <svg preserveAspectRatio="xMidYMid meet" data-bbox="82.189 55.096 481.811 481.808"
           xmlns="http://www.w3.org/2000/svg" viewBox="82.189 55.096 481.811 481.808" role="presentation"
           aria-hidden="true">
@@ -874,7 +901,7 @@
           target="_blank">www.tbcbank.ge”</a>
       </p>
 
-      <button class="close-btn" onclick="closeSidebar()">
+      <button class="close-btn" onclick="closeTermsSidebar()">
         დახურვა
       </button>
     </div>
