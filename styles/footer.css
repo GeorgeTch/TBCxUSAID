@@ -1,9 +1,9 @@
 footer {
   margin-top: 3rem;
   padding-block: 3rem;
-  display: flex;
   justify-content: space-between;
   background-color: rgb(26, 30, 31);
+  padding-inline: 30px;
 }
 
 .footer-grid {
@@ -11,6 +11,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
+  justify-content: space-between;
 }
 
 .tbc-logo {
@@ -146,4 +147,45 @@ footer {
   position: fixed;
   left: 0;
   top: 0;
+}
+
+@media (max-width: 780px) { 
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 10px;
+  }
+
+  .tbc-logo {
+    grid-area: 1;
+  }
+  
+  .other-logos {
+    grid-area: 2;
+  }
+  
+  .copyright-text {
+    grid-area: 4;
+  }
+  
+  .terms-text {
+    grid-area: 3;
+  }
+  
+  .mail-to-text {
+    grid-area: 2 / 1 / 2 / 1;
+    justify-self: flex-start;
+  }
+
+  .displayed-terms-sidebar {
+    width: 280px;
+  }
+
+  .terms-and-conditions-content {
+    width: 100%; 
+    padding-inline: 20px;
+  }
 }

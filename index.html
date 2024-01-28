@@ -80,8 +80,14 @@
           </svg>
         </a>
       </div>
-      
+
       <div class="header-right-section">
+        <div class="burger-menu" onclick="openNavSidebar()">
+          <div class="first-bar"></div>
+          <div class="second-bar"></div>
+          <div class="third-bar"></div>
+        </div>
+
         <nav>
           <ul class="nav-pages">
             <li><a href="https://www.tbcacademy.ge/">მთავარი</a></li>
@@ -91,29 +97,12 @@
           </ul>
 
           <ul class="nav-sidebar">
-            <div class="close-icon" onclick="closeNavSidebar()">
-              <svg preserveAspectRatio="xMidYMid meet" data-bbox="82.189 55.096 481.811 481.808"
-                xmlns="http://www.w3.org/2000/svg" viewBox="82.189 55.096 481.811 481.808" role="presentation"
-                aria-hidden="true">
-                <g>
-                  <path fill="rgb(128, 128, 128)"
-                    d="M531.936 536.904L323.094 328.063 114.253 536.904l-32.064-32.062L291.032 296 82.189 87.157l32.064-32.061 208.842 208.842L531.936 55.096 564 87.157 355.155 296 564 504.842l-32.064 32.062z">
-                  </path>
-                </g>
-              </svg>
-            </div>
 
             <li><a href="https://www.tbcacademy.ge/">მთავარი</a></li>
             <li><a href="https://www.tbcacademy.ge/it-academy">TBC IT</a></li>
             <li><a class="active" href="">TBCxUSAID</a></li>
             <li><a href="https://www.tbcacademy.ge/risks-academy">რისკები</a></li>
           </ul>
-
-          <div class="burger-menu" onclick="openNavSidebar()">
-            <div class="first-bar"></div>
-            <div class="second-bar"></div>
-            <div class="third-bar"></div>
-          </div>
         </nav>
       </div>
     </div>
@@ -122,13 +111,14 @@
 
   <main>
     <section class="heading-section">
-      <div class="heading-content wrapper">
+      <div class="heading-content">
         <h1>
           <div>TBC x USAID</div>
           <div>ᲢᲔᲥᲜᲝᲚᲝᲒᲘᲣᲠᲘ ᲒᲐᲜᲐᲗᲚᲔᲑᲘᲡᲗᲕᲘᲡ</div>
         </h1>
       </div>
     </section>
+
     <section class="description-section">
       <div class="wrapper">
         <h2>
@@ -504,7 +494,8 @@
           <div onclick="toggleAccordion(event)" id="question-row-0" class="question-row">
             <p>როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?</p>
             <div>
-              <svg class="qa-icon" id="qa-icon-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <svg class="qa-icon" id="qa-icon-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z">
                 </path>
@@ -555,7 +546,8 @@
           <div onclick="toggleAccordion(event)" id="question-row-1" class="question-row">
             <p>შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?</p>
             <div>
-              <svg class="qa-icon" id="qa-icon-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <svg class="qa-icon" id="qa-icon-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z">
                 </path>
@@ -573,7 +565,8 @@
           <div onclick="toggleAccordion(event)" id="question-row-2" class="question-row">
             <p>რა ღირს სწავლა პროგრამის ფარგლებში?</p>
             <div>
-              <svg class="qa-icon" id="qa-icon-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <svg class="qa-icon" id="qa-icon-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z">
                 </path>

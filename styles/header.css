@@ -16,6 +16,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 980px;
+  padding: 0 30px;
 }
 
 .header-left-section {
@@ -43,11 +45,13 @@ header a:hover {
 .burger-menu {
   width: 26px;
   height: 21px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  display: none;
+  z-index: 9999;
+  position: relative;
 }
 
 .first-bar,
@@ -57,6 +61,7 @@ header a:hover {
   height: 3px;
   background-color: rgb(219, 219, 219);
   border-radius: 1.5px;
+  transition: transform 0.3s;
 }
 
 .second-bar {
@@ -71,8 +76,21 @@ header a:hover {
   align-self: flex-end;
 }
 
+.burger-menu-open .first-bar{
+  transform: rotate(-45deg) translate(5px, 11px);
+}
+
+.burger-menu-open .second-bar{
+  transform: rotate(45deg);
+}
+
+.burger-menu-open .third-bar{
+  transform: rotate(-45deg) translate(-4px, -11px);
+}
+
 .nav-sidebar {
-  padding-top: 10rem;
+  padding-top: 7rem;
+  padding-right: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -104,5 +122,4 @@ header a:hover {
 
 .nav-sidebar li {
   min-height: 5rem;
-  padding-right: 1rem;
 }

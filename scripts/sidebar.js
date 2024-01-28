@@ -28,13 +28,15 @@ const menuBtn = document.querySelector('.burger-menu');
 const navSidebar = document.querySelector('.nav-sidebar');
 
 function openNavSidebar() {
-  navSidebar.classList.add('displayed-nav-sidebar')
-  sidebarsOuterSpace.classList.add('sidebars-outside-shade');
+  navSidebar.classList.toggle('displayed-nav-sidebar')
+  sidebarsOuterSpace.classList.toggle('sidebars-outside-shade');
+  menuBtn.classList.toggle("burger-menu-open");
 }
 
 function closeNavSidebar() {
   navSidebar.classList.remove('displayed-nav-sidebar');
   sidebarsOuterSpace.classList.remove('sidebars-outside-shade');
+  menuBtn.classList.remove("burger-menu-open");
 }
 
 document.addEventListener('click', event => {
