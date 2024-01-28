@@ -80,7 +80,7 @@
           </svg>
         </a>
       </div>
-
+      
       <div class="header-right-section">
         <nav>
           <ul class="nav-pages">
@@ -116,9 +116,8 @@
           </div>
         </nav>
       </div>
-
     </div>
-
+    <div class="sidebars-outer-container"></div>
   </header>
 
   <main>
@@ -502,10 +501,10 @@
 
       <div class="faq-list">
         <div class="qa-wrapper">
-          <div class="question-row">
+          <div onclick="toggleAccordion(event)" id="question-row-0" class="question-row">
             <p>როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?</p>
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <svg class="qa-icon" id="qa-icon-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z">
                 </path>
@@ -513,7 +512,7 @@
 
             </div>
           </div>
-          <div class="answer-block" gsa>
+          <div id="answer-block-0" class="answer-block" gsa>
             კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:
             <ul>
               <li>
@@ -553,17 +552,17 @@
         </div>
 
         <div class="qa-wrapper">
-          <div class="question-row">
+          <div onclick="toggleAccordion(event)" id="question-row-1" class="question-row">
             <p>შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?</p>
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <svg class="qa-icon" id="qa-icon-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z">
                 </path>
               </svg>
             </div>
           </div>
-          <div class="answer-block">
+          <div id="answer-block-1" class="answer-block">
             TBC X USAID ტექნოლოგიური განათლებისთვის პროგრამაში თითოეულ კანდიდატს აქვს მხოლოდ ერთი კურსის გავლის
             შესაძლებლობა. გარდა Information Security და Python კურსებისა, სადაც Basic დონის გავლის შემდეგ შესაძლებელია
             სწავლის გაგრძელება Advance დონეზე.
@@ -571,17 +570,17 @@
         </div>
 
         <div class="qa-wrapper">
-          <div class="question-row">
+          <div onclick="toggleAccordion(event)" id="question-row-2" class="question-row">
             <p>რა ღირს სწავლა პროგრამის ფარგლებში?</p>
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <svg class="qa-icon" id="qa-icon-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path fill="currentColor"
                   d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z">
                 </path>
               </svg>
             </div>
           </div>
-          <div class="answer-block">
+          <div id="answer-block-2" class="answer-block">
             პროგრამის ფარგლებში კურსებზე სწავლა სრულიად დაფინანსებულია თიბისი ბანკისა და USAID-ის მიერ.
           </div>
         </div>
@@ -620,7 +619,7 @@
       </p>
   </footer>
 
-  <div class="sidebar-outer-container"></div>
+  <div class="terms-sidebar-outer-container"></div>
 
   <div class="terms-and-conditions-sidebar">
     <div class="terms-and-conditions-content">
@@ -910,6 +909,7 @@
 
   <script src="/scripts/slider.js"></script>
   <script src="/scripts/sidebar.js"></script>
+  <script src="/scripts/accordion.js"></script>
 </body>
 
 </html>

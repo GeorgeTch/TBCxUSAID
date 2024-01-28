@@ -3,18 +3,24 @@ const termsCloseIcon = document.querySelector('.close-icon');
 const termsCloseBtn = document.querySelector('.close-btn');
 const termsSidebar = document.querySelector('.terms-and-conditions-sidebar');
 const termsBtn = document.querySelector('.terms-and-conditions');
-const sidebarOuterSpace = document.querySelector('.sidebar-outer-container')
+const sidebarsOuterSpace = document.querySelector('.sidebars-outer-container')
 
 
-function openTermsSidebar() { 
+function openTermsSidebar() {
   termsSidebar.classList.add('displayed-terms-sidebar');
-  sidebarOuterSpace.classList.add('sidebar-outside-bg');
+  sidebarsOuterSpace.classList.add('sidebars-outside-shade');
 }
 
 function closeTermsSidebar() {
   termsSidebar.classList.remove('displayed-terms-sidebar');
-  sidebarOuterSpace.classList.remove('sidebar-outside-bg');
+  sidebarsOuterSpace.classList.remove('sidebars-outside-shade');
 }
+
+document.addEventListener('click', event => {
+  if (event.target.matches('.sidebars-outer-container')) {
+    closeTermsSidebar();
+  }
+})
 
 // navigation sidebar
 
@@ -22,11 +28,17 @@ const menuBtn = document.querySelector('.burger-menu');
 const navSidebar = document.querySelector('.nav-sidebar');
 
 function openNavSidebar() {
-  navSidebar.style.display = 'flex';
-  sidebarOuterSpace.classList.add('sidebar-outside-bg');
+  navSidebar.classList.add('displayed-nav-sidebar')
+  sidebarsOuterSpace.classList.add('sidebars-outside-shade');
 }
 
 function closeNavSidebar() {
-  navSidebar.style.display = 'none';
-  sidebarOuterSpace.classList.remove('sidebar-outside-bg');
+  navSidebar.classList.remove('displayed-nav-sidebar');
+  sidebarsOuterSpace.classList.remove('sidebars-outside-shade');
 }
+
+document.addEventListener('click', event => {
+  if (event.target.matches('.sidebars-outer-container')) {
+    closeNavSidebar();
+  }
+})

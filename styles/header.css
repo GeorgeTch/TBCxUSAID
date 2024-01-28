@@ -72,8 +72,8 @@ header a:hover {
 }
 
 .nav-sidebar {
-  padding-top: 6rem;
-  display: none;
+  padding-top: 10rem;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
@@ -83,8 +83,23 @@ header a:hover {
   background-color: rgb(34 , 34, 34);
   width: 200px;
   height: 100vh;
-  z-index: 10;
+  z-index: 100;
+  transform: translateX(100%);
   transition: all 400ms;
+}
+
+.sidebars-outside-shade {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.displayed-nav-sidebar {
+  transform: translateX(0);
 }
 
 .nav-sidebar li {
