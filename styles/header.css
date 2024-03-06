@@ -6,10 +6,10 @@ header {
   right: 0;
   left: 0;
   height: 10vh;
-  background-color: rgba(34, 34, 34, 0.95);
   display: flex;
   align-items: center;
   z-index: 20;
+  transition: all 500ms;
 }
 
 .header-wrapper {
@@ -78,14 +78,17 @@ header a:hover {
 
 .burger-menu-open .first-bar{
   transform: rotate(-45deg) translate(5px, 11px);
+  background-color: rgb(128, 128, 128);
 }
 
 .burger-menu-open .second-bar{
   transform: rotate(45deg);
+  background-color: rgb(128, 128, 128);
 }
 
 .burger-menu-open .third-bar{
   transform: rotate(-45deg) translate(-4px, -11px);
+  background-color: rgb(128, 128, 128);
 }
 
 .nav-sidebar {

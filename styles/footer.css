@@ -100,7 +100,7 @@ footer {
   font-weight: bold;
 }
 
-.terms-and-conditions-content>.first-heading {
+.terms-and-conditions-content > .first-heading {
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -110,7 +110,6 @@ footer {
   font-weight: bold;
 }
 
-
 .close-btn {
   margin-block: 5rem 1rem;
   width: 100%;
@@ -118,7 +117,7 @@ footer {
   color: rgb(28, 28, 28);
   background-color: rgb(219, 219, 219);
   font-weight: bold;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   padding: 2rem;
   cursor: pointer;
@@ -149,7 +148,7 @@ footer {
   top: 0;
 }
 
-@media (max-width: 780px) { 
+@media (max-width: 780px) {
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -162,19 +161,19 @@ footer {
   .tbc-logo {
     grid-area: 1;
   }
-  
+
   .other-logos {
     grid-area: 2;
   }
-  
+
   .copyright-text {
     grid-area: 4;
   }
-  
+
   .terms-text {
     grid-area: 3;
   }
-  
+
   .mail-to-text {
     grid-area: 2 / 1 / 2 / 1;
     justify-self: flex-start;
@@ -185,7 +184,7 @@ footer {
   }
 
   .terms-and-conditions-content {
-    width: 100%; 
+    width: 100%;
     padding-inline: 20px;
   }
 }

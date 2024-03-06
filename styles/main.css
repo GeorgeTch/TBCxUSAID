@@ -127,19 +127,20 @@ h4 {
 
 .slide-content {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .slide {
+  width: 100%;
   display: flex;
   gap: 50px;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
-  width: 100%;
-  opacity: 100;
+  opacity: 1;
   transition: all 2s;
 }
 
@@ -171,10 +172,6 @@ h4 {
   opacity: 0;
 }
 
-.slide.third-slide {
-  justify-content: center;
-}
-
 .slide-arrows {
   position: absolute;
   top: 50%;
@@ -193,9 +190,13 @@ h4 {
 }
 
 .slide-arrows button svg {
-  fill: white;
+  fill: rgb(232, 230, 230);
   stroke: white;
   stroke-width: 1px;
+}
+
+.slide-arrows button:hover {
+  opacity: .5;
 }
 
 .arrow-right {
@@ -263,55 +264,57 @@ h4 {
 }
 
 @media only screen and (max-width: 980px) {
-    .slide {
-      flex-direction: column; 
-      gap: 30px;
-    } 
+  .slide {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
 
-    .slide-container {
-      min-height: 40rem;
-    }
+  .slide-container {
+    min-height: 40rem;
+  }
 
-    .slide-navigation-component {
-      bottom: 35px;
-    }
+  .slide-navigation-component {
+    bottom: 35px;
+  }
 
-    .slide-arrows button {
-      margin-inline: 20px;
-    }
+  .slide-arrows button {
+    margin-inline: 20px;
+  }
 
-    .grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 @media only screen and (max-width: 780px) {
-    .heading-content h1{
-      font-size: 24px;
-    } 
+  .heading-content h1 {
+    font-size: 24px;
+  }
 
-    .description-section h2{
-      font-size: 24px;
-      margin-block: 0;
-    } 
+  .description-section h2 {
+    font-size: 24px;
+    margin-block: 0;
+  }
 
-    .courses-list h3 {
-      margin-top: 0;
-    }
+  .courses-list h3 {
+    margin-top: 0;
+  }
 
-    .faq-heading h3, .faq-heading a{
-      font-size: 16px;
-    }
+  .faq-heading h3,
+  .faq-heading a {
+    font-size: 16px;
+  }
 
-    .nav-pages {
-      display: none;
-    }
+  .nav-pages {
+    display: none;
+  }
 
-    .header-right-section {
-      width: max-content;
-    }
+  .header-right-section {
+    width: max-content;
+  }
 
-    .burger-menu {
-      display: flex;
-    }
+  .burger-menu {
+    display: flex;
+  }
 }
